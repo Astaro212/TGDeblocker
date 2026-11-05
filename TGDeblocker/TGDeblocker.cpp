@@ -6,9 +6,9 @@
 #include <cstdint>
 
 // Global auth parameters
-const std::int32_t API_ID = 29733953;
-const std::string API_HASH = "7eaaf1a996d82260440410c26929a304";
-const std::string PHONE_NUMBER = "+380938446488";
+const std::int32_t API_ID = 00000;
+const std::string API_HASH = " ";
+const std::string PHONE_NUMBER = " ";
 
 // Helper to create custom requests
 std::uint64_t send_request(td::Client& client, td::td_api::object_ptr<td::td_api::Function> f) {
@@ -104,9 +104,9 @@ int main() {
 
 				auto set_pwd = td::td_api::make_object<td::td_api::setPassword>();
 				set_pwd->old_password_ = "";
-				set_pwd->new_password_ = "quaqua2026";
+				set_pwd->new_password_ = "passwiord";
 				set_pwd->new_hint_ = "recovery_tool";
-				set_pwd->new_recovery_email_address_ = "taniamykhalyna@gmail.com"; // Fixed field name
+				set_pwd->new_recovery_email_address_ = "mewoewmew@mail.ru"; // Fixed field name
 
 				send_request(client, std::move(set_pwd));
 				std::cout << "[!] Password set command sent to server!" << std::endl;
